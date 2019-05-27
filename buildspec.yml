@@ -1,0 +1,65 @@
+version: 0.2
+#env:
+  #variables:
+    #key: "value"
+    #key: "value"
+  #parameter-store:
+    #key: "value"
+    #key: "value"
+
+phases:
+  install:
+    commands:
+      - echo Entered in Install Phase
+      - apt-get update -y
+      - apt-get install -y maven
+#    finally:
+#      - command
+#      - command
+#  pre_build:
+#    run-as: Linux-user-name
+#    commands:
+#      - command
+#      - command
+#    finally:
+#      - command
+#      - command
+  build:
+    commands:
+      - echo Entered Build Phase
+      - mvn clean package
+#    finally:
+#      - command
+#      - command
+#  post_build:
+#    run-as: Linux-user-name
+#    commands:
+#      - command
+#      - command
+#    finally:
+#      - command
+#      - command
+artifacts:
+  files:
+    - target/WebApp.war
+#    - location
+#  name: artifact-name
+#  discard-paths: yes
+#  base-directory: location
+#  secondary-artifacts:
+#    artifactIdentifier:
+#      files:
+#        - location
+#      name: secondary-artifact-name
+#      discard-paths: yes
+#      base-directory: location
+#    artifactIdentifier:
+#      files:
+#        - location
+#        - location
+#      discard-paths: yes
+#      base-directory: location
+#cache:
+#  paths:
+#    - path
+#    - path
