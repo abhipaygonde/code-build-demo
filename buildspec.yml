@@ -12,6 +12,7 @@ phases:
     commands:
       - echo Entered in Install Phase
       - apt-get update -y
+      - apt-get install java-1.8.0
       - apt-get install -y maven
 #    finally:
 #      - command
