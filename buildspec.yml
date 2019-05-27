@@ -43,6 +43,7 @@ phases:
 #      - command
 artifacts:
   files:
+    - appspec.yml
     - target/WebApp.war
 #    - location
 #  name: artifact-name
